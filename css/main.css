@@ -3,12 +3,14 @@
 #outter-wrapper{
   display: flex;
   flex-flow:row wrap;
-  justify-content: center;
+/*   justify-content: center; */
 
-  width:1280px;
-  height:800px;
+  width:100vw;
+  height:100vh;
   margin: 0 auto;
-  border: 1px solid black;
+  background-color: green;
+  
+/*   border: 1px solid black; */
 
   
 }
@@ -16,19 +18,39 @@
 #vs {
   width:200px;
   height:200px;
-  border:1px solid black;
-  margin: 10px;
-  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin: -70px 0 0 -110px;
+  z-index: 100;
+/*   border:1px solid black; */
+/*   margin: 10px;
+  margin-top: 200px; */
+  
+  
 }
 
-.movie-poster{
-  width:400px;
-  height:600px;
-  border: 1px solid black;
-  margin: 10px;
+.movie-poster-one-bg{
+  width:50vw;
+  height:100vh;
+/*   border: 1px solid black; */
+  
+  background-color: orange;
     
   
 }
+
+.movie-poster-two-bg{
+  width:50vw;
+  height:100vh;
+/*   border: 1px solid black; */
+
+  background-color: blue;
+    
+  
+}
+
+
 
 #generate-btn{
   width:200px;
