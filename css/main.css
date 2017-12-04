@@ -1,0 +1,41 @@
+@import url('reset.css');
+
+#outter-wrapper{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+
+  width:1280px;
+  height:800px;
+  margin: 0 auto;
+  border: 1px solid black;
+
+  
+}
+
+#vs {
+  width:200px;
+  height:200px;
+  border:1px solid black;
+  margin: 10px;
+  margin-top: 200px;
+}
+
+.movie-poster{
+  width:400px;
+  height:600px;
+  border: 1px solid black;
+  margin: 10px;
+    
+  
+}
+
+#generate-btn{
+  width:200px;
+  height:50px;
+  border-radius: 20px;
+  background-color: rgb(240,110,18);
+  line-height:50px;
+  margin: 10px;
+  
+}
