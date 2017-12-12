@@ -16,7 +16,7 @@ body{
 
 .movie-poster-one-bg{
   height:100vh;
-  width:50vw;
+  width:0vw;
   background-color:yellow;
   float:left;
   
@@ -26,6 +26,8 @@ body{
   animation-name: grow-left;
   animation-duration: .5s;
   animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: once;
 }
 
 .movie-poster-one-bg:before{
@@ -41,7 +43,9 @@ body{
 }
 
 
-#vs {
+
+
+.vs {
   width:250px;
   height:250px;
   position: absolute;
@@ -49,14 +53,32 @@ body{
   left:50%;
   margin: -70px 0 0 -130px;
   z-index: 100;
-/*   border:1px solid black; */
+  opacity: 0;
+/*   border:1px solid black;
   
+/*   animation-name:rotate;
+  animation-duration:1s;
+  animation-timing-function:ease-in;
+  animation-iteration-count: infinite;  */
+}
+
+/* .appear{
+   animation-name:appear;
+  animation-duration:.5s;
+  animation-timing-function:ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+} */
+   
+
+
+.rotate{
   animation-name:rotate;
   animation-duration:1s;
   animation-timing-function:ease-in;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; 
   
-   
 }
 
 .fade-in{
@@ -64,13 +86,14 @@ body{
   animation-duration:1s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   
 }
 
 
 .movie-poster-two-bg{
   height:100vh;
-  width:50vw;
+  width:0vw;
   float:right;
   background-color:orange;
 
@@ -80,6 +103,8 @@ body{
   animation-name: grow-right;
   animation-duration: .5s;
   animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: once;
 }
 
 .movie-poster-two-bg:before{
@@ -122,6 +147,12 @@ body{
 
 }
 
+@keyframes appear {
+  0% {width:0vw}
+  100%{width:35vw}
+
+}
+
 
 
 
@@ -135,6 +166,9 @@ body{
   left:50%;
   margin: -70px 0 0 -100px;
   z-index: 100;
+  line-height: 50px;
+  color:white;    
+  text-align: center;
 }
 
 .btn-holder{

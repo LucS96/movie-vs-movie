@@ -4,11 +4,34 @@ $( document ).ready(function() {
   $('#generate-btn').on("click", function(){
    $('.movie-poster-one-bg').addClass('grow-left');
    $('.movie-poster-two-bg').addClass('grow-right');
-   $('.vs-btn').addClass('fade-in');
     
     
+    $('.movie-poster-one-bg').one('webitAnimationEnd oanimationend msAnimationEnd animationend',
+function(e){
+    console.log("left-finished");
+      
+
+        });
+
+        
+ $('.movie-poster-two-bg').one('webitAnimationEnd oanimationend msAnimationEnd animationend',
+  function(e){
+         console.log("right-finished");
+   $('.vs').addClass('rotate fade-in');
+     
+      
   console.log("button has been clicked");
+   
+          
+        
+          });
+        
+
 });
+
+   
+   
+
 
 });
 
