@@ -17,7 +17,7 @@ function(e){
  $('.movie-poster-two-bg').one('webitAnimationEnd oanimationend msAnimationEnd animationend',
   function(e){
          console.log("right-finished");
-   $('.vs').addClass('rotate fade-in');
+   $('.vs').addClass('vs-anim');
      
       
   console.log("button has been clicked");

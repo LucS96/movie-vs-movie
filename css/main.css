@@ -70,7 +70,11 @@ body{
   animation-fill-mode: forwards;
   
 } */
-   
+
+.vs-anim{
+   animation: rotate 2s, fadeIn 3s;
+  animation-iteration-count:infinite;
+}
 
 
 .rotate{
